@@ -13,7 +13,7 @@ const HomePage = () => {
                 {/* hero section */}
                 <div>
                     <p className='font-bold text-lg md:text-4xl'>The meeting place for all </p>
-                    <p className='font-bold text-xl uppercase py-4 text-[#ff8a00] md:text-5xl '>food vendors  <span className='text-black'>&</span> foodies</p>
+                    <p className='font-bold text-xl uppercase py-4 text-transparent bg-clip-text bg-gradient-to-r from-[#f9580a] to-[#ff8a00]  md:text-5xl '>food vendors  <span className='text-black'>&</span> foodies</p>
 
                 </div>
 
@@ -41,17 +41,20 @@ const HomePage = () => {
                 </div>
 
 
+
+
+
                 {/* seaction conatiner */}
                 <div className="bg-[#fef6eb] py-10 my-[10%] ">
-                    {/* section titlw */}
+                    {/* section title */}
                     <p className='text-center py-6 text-3xl font-bold'>How it works</p>
 
 
                     <div className=' flex flex-col space-y-2 items-center justify-evenly md:flex-row'>
 
                         {/* step1 */}
-                        <div className='flex flex-col justify-center items-center'>
-                            <img src={require('../assert/search-favorite.png')} alt="" className='w-[80px]' />
+                        <div className='flex flex-col justify-center items-center mt-2'>
+                            <img src={require('../assert/search-favorite.png')} alt="" className='w-[70px]' />
                             <div className='text-center font-semibold'>
                                 <p>Sign Up as a</p>
                                 <p>Vendor or Customer</p>
@@ -60,7 +63,7 @@ const HomePage = () => {
 
                         {/* step2 */}
                         <div className='flex flex-col justify-center items-center'>
-                            <img src={require('../assert/location.png')} alt="" className='w-[80px]' />
+                            <img src={require('../assert/location.png')} alt="" className='w-[70px]' />
                             <div className='text-center font-semibold'>
                                 <p>Set Your Location</p>
                                 <p>for delivery or Pick-up</p>
@@ -68,8 +71,8 @@ const HomePage = () => {
                         </div>
 
                         {/* step3 */}
-                        <div className='flex flex-col justify-center items-center'>
-                            <img src={require('../assert/user-add.png')} alt="" className='w-[80px]' />
+                        <div className='flex flex-col justify-center items-center mt-3'>
+                            <img src={require('../assert/user-add.png')} alt="" className='w-[70px]' />
                             <div className='text-center font-semibold'>
                                 <p>Find Customers or</p>
                                 <p>Vendor near you</p>
@@ -79,12 +82,14 @@ const HomePage = () => {
                 </div>
 
 
+
+
                 {/* categories container */}
                 <div className='my-[10%] md:container md:mx-auto  px-10'>
 
                     {/* section title */}
                     <div className='flex'>
-                        <p className='font-semibold text-3xl text-[#f9580a]'>CATEGORIES</p>
+                        <p className='font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#f9580a] to-[#ff8a00] '>CATEGORIES</p>
                         <img src={require('../assert/arrow-right.png')} alt="" />
                     </div>
 
@@ -92,8 +97,8 @@ const HomePage = () => {
                     {/* dish 1 */}
                     <div className='flex flex-wrap space-x-4 space-y-4 items-center justify-center mt-10 md:flex-nowrap md:space-x-10 '>
 
-                        <div className='shadow-md w-[120px] md:w-[300px] rounded-md '>
-                            <img src={require('../assert/img1.png')} alt="" className='' />
+                        <div className='shadow-md w-[120px] md:w-[300px] rounded-md mt-2 '>
+                            <img src={require('../assert/img1.png')} alt=""  />
 
                             <div className='text-left py-4 px-2'>
                                 <p className='font-bold'>Restaurant</p>
@@ -101,7 +106,7 @@ const HomePage = () => {
 
                                 <div className='flex justify-end mt-4 text-sm font-bold'>
                                     <p>view more </p>
-                                    <img src={require('../assert/arrow-right2.png')} alt="" />
+                                    <img src={require('../assert/arrow-right2.png')} alt="" className='w-4 pt-1' />
                                 </div>
                             </div>
                         </div>
@@ -117,7 +122,7 @@ const HomePage = () => {
 
                                 <div className='flex justify-end mt-4 text-sm font-bold'>
                                     <p>view more </p>
-                                    <img src={require('../assert/arrow-right2.png')} alt="" />
+                                    <img src={require('../assert/arrow-right2.png')} alt="" className='w-4 pt-1'/>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +138,7 @@ const HomePage = () => {
 
                                 <div className='flex justify-end mt-4 text-sm font-bold'>
                                     <p>view more </p>
-                                    <img src={require('../assert/arrow-right2.png')} alt="" />
+                                    <img src={require('../assert/arrow-right2.png')} alt="" className='w-4 pt-1'/>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +154,7 @@ const HomePage = () => {
 
                                 <div className='flex justify-end mt-4 text-sm font-bold'>
                                     <p>view more </p>
-                                    <img src={require('../assert/arrow-right2.png')} alt="" />
+                                    <img src={require('../assert/arrow-right2.png')} alt="" className='w-4 pt-1' />
                                 </div>
                             </div>
                         </div>
@@ -157,10 +162,14 @@ const HomePage = () => {
                 </div>
 
 
+
+
+
+
                 {/* customer review section  */}
                 <div className='my-[10%] container mx-auto'>
                     {/* section title */}
-                    <p className='text-center py-6 text-3xl font-bold text-[#f9580a]'>CUSTOMER REVIEW</p>
+                    <p className='text-center py-6 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#f9580a] to-[#ff8a00] '>CUSTOMER REVIEW</p>
 
                     <div className='flex mx-4 bg-red-50 p-2 justify-center items-center space-y-4 space-x-2 md:space-x-6 md:bg-transparent md:mx-0'>
 
@@ -190,13 +199,16 @@ const HomePage = () => {
             </main>
 
 
+
+
+
             {/* recommendetion  section*/}
 
             {/* container */}
             <div className='my-[10%] container w-full mx-auto px-10 md:px-20'>
 
                 {/* text*/}
-                <p className='text-left '>couldn't find your favorite  vendor? <span className='uppercase font-bold text-lg md:text-3xl   '>recommend vendor</span></p>
+                <p className='text-left text-lg'>couldn't find your favorite  vendor? <span className='uppercase font-bold text-lg md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#f9580a] to-[#ff8a00]  '>recommend vendor</span></p>
 
                 {/* input flied 1 */}
                 <div className='flex flex-col space-y-2 justify-center items-center my-4 md:my-10 self-center md:flex-row'>

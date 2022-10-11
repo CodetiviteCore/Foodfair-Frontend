@@ -9,7 +9,7 @@ const Header = () => {
     if (showMenu) {
         return (
             // mobile menu container
-            menu = <div className=" flex flex-col w-[80%] h-[100vh] fixed top-0  px-4 py-10 left-0 capitalize font-bold space-y-4 bg-white z-50 md:hidden">
+            menu = <div className=" flex flex-col w-[80%] h-[100vh] fixed top-0  px-4 py-10 left-0 capitalize font-bold space-y-4 bg-white z-50 md:hidden ">
 
                 <div className='flex justify-end mx-4'>
                     {/* close icon */}
@@ -48,7 +48,7 @@ const Header = () => {
                     </div >
 
                     {/* nav links desktop */}
-                    < div className=' space-x-10 font-bold hidden md:flex' >
+                    < div className=' space-x-10 font-bold hidden lg:flex' >
                         <p className='hover:border-b-2 border-[#ff8a00]'>Why foodfair?</p>
                         <p className='hover:border-b-2 border-[#ff8a00]'>Become  a Vendor</p>
                         <p className='hover:border-b-2 border-[#ff8a00]'>FAQ</p>
@@ -56,13 +56,13 @@ const Header = () => {
                     </div >
 
                     {/* reg section */}
-                    < div className='hidden md:block' >
+                    < div className='hidden lg:block' >
                         <button className='py-2 px-6 font-bold border-2 border-black rounded-md mx-3 hover:bg-[#ff8a00] hover:text-white hover:border-white'>Log In</button>
                         <button className='py-2 px-6 font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black'>Sign Up</button>
                     </div >
 
                     {/* handbuger menu icon */}
-                    <div className='block md:hidden'>
+                    <div className='block lg:hidden'>
                         <img src={require('../assert/menu-icon.png')} alt="" width={30} onClick={() => setMenu(!showMenu)} />
                     </div>
 
