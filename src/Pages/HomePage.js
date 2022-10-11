@@ -97,7 +97,7 @@ const HomePage = () => {
                     {/* dish 1 */}
                     <div className='flex flex-wrap space-x-4 space-y-4 items-center justify-center mt-10 md:flex-nowrap md:space-x-10 '>
 
-                        <div className='shadow-md w-[120px] md:w-[300px] rounded-md mt-2 '>
+                        <div className='shadow-md w-[120px] md:w-[300px] rounded-md mt-4 '>
                             <img src={require('../assert/img1.png')} alt=""  />
 
                             <div className='text-left py-4 px-2'>
