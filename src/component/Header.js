@@ -9,7 +9,7 @@ const Header = () => {
     if (showMenu) {
         return (
             // mobile menu container
-            menu = <div className=" flex flex-col w-[80%] h-[100vh] fixed top-0  px-4 py-10 left-0 capitalize font-bold space-y-4 bg-white z-50 md:hidden ">
+            menu = <div className=" flex flex-col w-[80%] h-[100vh] fixed top-0  px-4 py-10 left-0 capitalize font-bold space-y-4 bg-white z-50 lg:hidden ">
 
                 <div className='flex justify-end mx-4'>
                     {/* close icon */}
@@ -38,7 +38,7 @@ const Header = () => {
     return (
         <>
             {/* header container */}
-            < header className=' py-5 shadow-md md:py-10' >
+            < header className=' py-5 shadow-md lg:py-10' >
                 {/* header */}
                 < div className='mx-auto px-10 container flex justify-between' >
 
