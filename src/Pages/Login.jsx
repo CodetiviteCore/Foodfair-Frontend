@@ -3,6 +3,7 @@ import FormInputs from "../component/FormInputs"
 import FormButton from "../component/FormButton"
 import PasswordInput from "../component/PasswordInput"
 import Image from "../component/Image"
+import { Link } from "react-router-dom"
 
 
 
@@ -82,9 +83,9 @@ function Login(){
                            
                          <p className="text-sm mt-4">
                               Don't have an account? 
-                              <a href="/signup" className="text-[#FF8A00] hover:text-orange-600 font-medium">
+                              <Link to={"/signup"} className="text-[#FF8A00] hover:text-orange-600 font-medium">
                                    Create Account
-                              </a>
+                              </Link>
                          </p>
                     </form>
                </div>

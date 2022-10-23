@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,9 +30,9 @@ const Header = () => {
                     <p className='hover:bg-[#ff8a00]'>Privacy Policies</p>
 
                     {/* buttons */}
-                    <button  className='py-3 w-full font-bold border-2 border-black rounded-md  hover:bg-[#ff8a00] hover:text-white hover:border-white'><a href="/login">Log In</a></button>
+                    <Link to={'/login'} className='py-3 w-full text-center font-bold border-2 border-black rounded-md  hover:bg-[#ff8a00] hover:text-white hover:border-white'>Log In</Link>
 
-                    <button className='py-3 w-full font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black' ><a href="/signup">Sign Up</a></button>
+                    <Link to={'/signup'} className='py-3 text-center w-full font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black' >Sign Up</Link>
                 </div >
             </div>
         )
@@ -59,9 +60,9 @@ const Header = () => {
 
                     {/* reg section */}
                     < div className='hidden lg:block' >
-                        <button className='py-2 px-6 font-bold border-2 border-black rounded-md mx-3 hover:bg-[#ff8a00] hover:text-white hover:border-white'><a href="/login">Log In</a></button>
+                        <Link to={'/login'} className='py-2 px-6 font-bold border-2 border-black rounded-md mx-3 hover:bg-[#ff8a00] hover:text-white hover:border-white'>Log In</Link>
 
-                        <button className='py-2 px-6 font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black'><a href="/signup">Sign Up</a></button>
+                        <Link to={'/signup'} className='py-2 px-6 font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black'>Sign Up</Link>
                     </div >
 
                     {/* handbuger menu icon */}
