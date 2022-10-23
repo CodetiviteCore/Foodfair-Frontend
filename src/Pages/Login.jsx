@@ -83,7 +83,7 @@ function Login(){
                            
                          <p className="text-sm mt-4">
                               Don't have an account? 
-                              <p className="text-[#FF8A00] hover:text-orange-600 font-medium" onClick={()=>navigate('/signup')}>
+                              <p className="text-[#FF8A00] hover:text-orange-600 font-medium" onClick={()=>navigate('signup')}>
                                    Create Account
                               </p>
                          </p>

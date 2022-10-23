@@ -111,7 +111,7 @@ function Signup(){
                            
                          <p className="text-sm mt-2 sm:mt-4">
                               Already have an account? 
-                              <a href="login" className="text-[#FF8A00] hover:text-orange-600" onClick={()=>navigate('/login')}>
+                              <a href="login" className="text-[#FF8A00] hover:text-orange-600" onClick={()=>navigate('login')}>
                                    Login
                               </a>
                          </p>
