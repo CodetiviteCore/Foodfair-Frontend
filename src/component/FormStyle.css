@@ -1,0 +1,9 @@
+span{
+     color:crimson;
+     padding: 3px;
+     display: none;
+}
+
+input:invalid[focused="true"] ~ span{
+     display:block;
+}

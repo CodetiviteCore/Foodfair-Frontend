@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
-
+    let navigate = useNavigate();
     // menu state
     const [showMenu, setMenu] = useState();
     let menu;
@@ -27,9 +29,9 @@ const Header = () => {
                     <p className='hover:bg-[#ff8a00]'>Privacy Policies</p>
 
                     {/* buttons */}
-                    <button className='py-3 w-full font-bold border-2 border-black rounded-md  hover:bg-[#ff8a00] hover:text-white hover:border-white'>Log In</button>
+                    <button  className='py-3 w-full font-bold border-2 border-black rounded-md  hover:bg-[#ff8a00] hover:text-white hover:border-white' onClick={()=>navigate('/login')}>Log In</button>
 
-                    <button className='py-3 w-full font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black'>Sign Up</button>
+                    <button className='py-3 w-full font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black' onClick={()=>navigate('/signup')}>Sign Up</button>
                 </div >
             </div>
         )
@@ -57,8 +59,9 @@ const Header = () => {
 
                     {/* reg section */}
                     < div className='hidden lg:block' >
-                        <button className='py-2 px-6 font-bold border-2 border-black rounded-md mx-3 hover:bg-[#ff8a00] hover:text-white hover:border-white'>Log In</button>
-                        <button className='py-2 px-6 font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black'>Sign Up</button>
+                        <button className='py-2 px-6 font-bold border-2 border-black rounded-md mx-3 hover:bg-[#ff8a00] hover:text-white hover:border-white' onClick={()=>navigate('/login')}>Log In</button>
+
+                        <button className='py-2 px-6 font-bold text-white rounded-md bg-[#ff8a00] hover:bg-white hover:text-black hover:border-2 hover:border-black'  onClick={()=>navigate('/signup')}>Sign Up</button>
                     </div >
 
                     {/* handbuger menu icon */}
