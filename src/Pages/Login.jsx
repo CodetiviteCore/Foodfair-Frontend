@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { useNavigate } from "react-router-dom"
 import FormInputs from "../component/FormInputs"
 import FormButton from "../component/FormButton"
 import PasswordInput from "../component/PasswordInput"
@@ -9,7 +8,7 @@ import Image from "../component/Image"
 
 function Login(){
 
-     let navigate = useNavigate();
+
 
      const [values, setValues] = useState({
           email:"",
@@ -83,9 +82,9 @@ function Login(){
                            
                          <p className="text-sm mt-4">
                               Don't have an account? 
-                              <p className="text-[#FF8A00] hover:text-orange-600 font-medium" onClick={()=>navigate('signup')}>
+                              <a href="/signup" className="text-[#FF8A00] hover:text-orange-600 font-medium">
                                    Create Account
-                              </p>
+                              </a>
                          </p>
                     </form>
                </div>
